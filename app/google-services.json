@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "863627967269",
+    "firebase_url": "https://chat-book-6fd3a.firebaseio.com",
+    "project_id": "chat-book-6fd3a",
+    "storage_bucket": "chat-book-6fd3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863627967269:android:5accc828dc059ec532f8cc",
+        "android_client_info": {
+          "package_name": "com.example.chatbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863627967269-na50ojuiacat8o8shqf7ej14cdt5u4o9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrH46osmZJ58zJEkmMH-8B2HebdPZ3woA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863627967269-na50ojuiacat8o8shqf7ej14cdt5u4o9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

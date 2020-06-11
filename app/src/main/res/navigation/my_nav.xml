@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/login_signin">
+    <fragment
+        android:id="@+id/login_signin"
+        android:name="com.example.chatbook.login_signin"
+        android:label="fragment_login_signin"
+        tools:layout="@layout/fragment_login_signin" >
+        <action
+            android:id="@+id/action_login_signin_to_signIn_EnterName"
+            app:destination="@id/signIn_EnterName" />
+        <action
+            android:id="@+id/action_login_signin_to_logIn_EnterEmail"
+            app:destination="@id/logIn_EnterEmail" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn_EnterName"
+        android:name="com.example.chatbook.signIn_EnterName"
+        android:label="fragment_sign_in__enter_name"
+        tools:layout="@layout/fragment_sign_in__enter_name" >
+        <action
+            android:id="@+id/action_signIn_EnterName_to_sigIn_EnterEmail"
+            app:destination="@id/sigIn_EnterEmail" />
+    </fragment>
+    <fragment
+        android:id="@+id/logIn_EnterEmail"
+        android:name="com.example.chatbook.LogIn_EnterEmail"
+        android:label="fragment_log_in__enter_email"
+        tools:layout="@layout/fragment_log_in__enter_email" >
+        <action
+            android:id="@+id/action_logIn_EnterEmail_to_logIn_EnterPassword"
+            app:destination="@id/logIn_EnterPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/logIn_EnterPassword"
+        android:name="com.example.chatbook.logIn_EnterPassword"
+        android:label="fragment_log_in__enter_password"
+        tools:layout="@layout/fragment_log_in__enter_password" />
+    <fragment
+        android:id="@+id/sigIn_EnterEmail"
+        android:name="com.example.chatbook.SigIn_EnterEmail"
+        android:label="fragment_sig_in__enter_email"
+        tools:layout="@layout/fragment_sig_in__enter_email" >
+        <action
+            android:id="@+id/action_sigIn_EnterEmail_to_signIn_EnterPassword"
+            app:destination="@id/signIn_EnterPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn_EnterPassword"
+        android:name="com.example.chatbook.SignIn_EnterPassword"
+        android:label="fragment_sign_in__enter_password"
+        tools:layout="@layout/fragment_sign_in__enter_password" >
+        <action
+            android:id="@+id/action_signIn_EnterPassword_to_signIn_uploadProfile"
+            app:destination="@id/signIn_uploadProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn_uploadProfile"
+        android:name="com.example.chatbook.SignIn_uploadProfile"
+        android:label="fragment_sign_in_upload_profile"
+        tools:layout="@layout/fragment_sign_in_upload_profile" />
+</navigation>

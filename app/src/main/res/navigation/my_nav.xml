@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/login_signin">
+    app:startDestination="@id/login_signin"
+    tools:ignore="UnusedNavigation">
     <fragment
         android:id="@+id/login_signin"
         android:name="com.example.chatbook.login_signin"
@@ -45,21 +46,21 @@
         android:label="fragment_sig_in__enter_email"
         tools:layout="@layout/fragment_sig_in__enter_email" >
         <action
-            android:id="@+id/action_sigIn_EnterEmail_to_signIn_EnterPassword"
-            app:destination="@id/signIn_EnterPassword" />
+            android:id="@+id/action_sigIn_EnterEmail_to_signIn_uploadProfile"
+            app:destination="@id/signIn_uploadProfile" />
     </fragment>
     <fragment
         android:id="@+id/signIn_EnterPassword"
         android:name="com.example.chatbook.SignIn_EnterPassword"
         android:label="fragment_sign_in__enter_password"
-        tools:layout="@layout/fragment_sign_in__enter_password" >
-        <action
-            android:id="@+id/action_signIn_EnterPassword_to_signIn_uploadProfile"
-            app:destination="@id/signIn_uploadProfile" />
-    </fragment>
+        tools:layout="@layout/fragment_sign_in__enter_password" />
     <fragment
         android:id="@+id/signIn_uploadProfile"
         android:name="com.example.chatbook.SignIn_uploadProfile"
         android:label="fragment_sign_in_upload_profile"
-        tools:layout="@layout/fragment_sign_in_upload_profile" />
+        tools:layout="@layout/fragment_sign_in_upload_profile" >
+        <action
+            android:id="@+id/action_signIn_uploadProfile_to_signIn_EnterPassword"
+            app:destination="@id/signIn_EnterPassword" />
+    </fragment>
 </navigation>
